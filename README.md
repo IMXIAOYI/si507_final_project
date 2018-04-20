@@ -11,7 +11,7 @@
 3. plot_prepare: prepare data and style go generate image
 
 ## user guide
-in commandlind, run > python app.py
-then you will see a url like 127.0.0.1:5000
-type url+\ for example 127.0.0.1:5000/ to start 
-you will need type city name first
+1. in commandlind, run > python app.py
+2. then you will see a url like 127.0.0.1:5000 type url+\ for example 127.0.0.1:5000/ to start 
+3. you will need type city name first， try to type in "Ann Arbor","Seattle" etc (first character in each word should be upper-letter)
+4. choose category, type in like "bars"
