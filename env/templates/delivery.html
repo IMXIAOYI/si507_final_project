@@ -1,0 +1,16 @@
+<html>
+<head>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <style>body{ margin:0 100; background:whitesmoke; }</style>
+</head>
+<body>
+	<h2>You are in {{ city_name }}</h2>
+    	<a href="/category">explore the restaurant category you want!</a> </br>
+    	<a href="/open_now">explore the restaurants open now</a></br>
+    	<a href="/price_range">choose the restaurant price range you want</a></br>
+  <!-- Output from the Python script above: -->
+{{div_placeholder}}
+<p>State:{{city_information[2]}}&nbsp;&nbsp;County:{{city_information[3]}}&nbsp;&nbsp;Area Code:{{city_information[4]}}</p>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <style>body{ margin:0 100; background:whitesmoke; }</style>
+</head>
+<body>
+	<h2>You are in {{ city_name }}</h2>
+    	<h3>The restaurant category you choose is {{category}}</h3>
+    	<form action="/category_result" method="POST">
+    		<p>Category: <input type="text" name="category_name"/> <input type="submit" value="Submit"/> </p>
+    		<a href="/open_now">explore the restaurants open now</a> </br>
+    		<a href="/delivery">explore the restaurants supporting delivery service</a></br>
+    		<a href="/price_range">choose the restaurant price range you want</a></br>
+    	</form>
+  <!-- Output from the Python script above: -->
+{{div_placeholder}}
+<p>State:{{city_information[2]}}&nbsp;&nbsp;County:{{city_information[3]}}&nbsp;&nbsp;Area Code:{{city_information[4]}}</p>
+</body>
+</html>
+
+

@@ -1,0 +1,16 @@
+<h2>You are in {{city_name}}</h2>
+<h3>Choose the restaurant price you want!</h3>
+<form action="/price_range_result" method="POST">
+    <p>Price: 
+    	<select name='price'>
+    		<option value ="1">$</option>
+    		<option value ="2">$$</option>
+    		<option value="3">$$$</option>
+    		<option value="4">$$$$</option>
+    	</select>
+    <input type="submit" value="Submit"/> 
+    </p>
+    <a href="/open_now">explore the restaurants open now</a> </br>
+    <a href="/delivery">explore the restaurants supporting delivery service</a></br>
+    <a href="category">choose the restaurant category you want</a></br>
+</form>
